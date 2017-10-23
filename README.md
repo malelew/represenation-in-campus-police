@@ -50,15 +50,18 @@ References:
 ### Proposed Methods
 
 *Data Cleaning*
+
 From the first dataset on the campus police, columns such as education level and state can be dropped; colleges with small police forces should also be removed. There are some null data points (some colleges did not report on all topics) and non-relevant college characteristics (such as ZIP code, standardized test scores, financial aid standings, etc.) that need to be removed from the second dataset on college characteristics. Overall, for college student demographics dataset, we must remove the colleges for which we don't have entries in the police dataset since the college dataset size is larger.
 
 *Data Analysis*
+
 For the last dataset, the data is separated across multiple files so the datasets must be merged. In analyizing the datasets, we will first determine if racial demograhpics are similarly distributed across campus police and the student body that they are policing. In order to do so, we will be conducting a Chi-square test of homogeneity on each university's campus police/student body populations. The calculated chi-square statistic is a quantitative measure of how different the two populations are; the lower the chi-square statistic, the more similar the two populations are. 
 
 Now that we have calculated this chi-squared statistic, we can use this as an indicator of how representative the police department demographics are of the university, and thus, can be used as the x-axis for graphic other characteristics about the police department. Since we want to determine if lack of homogeniety between the police and student demographics lead to a positive correlation with more money spent on police, lethal weapons, and arrests, among other factors, we want to develop a linear regression to observe the correlation. 
 
 
 *What to report*
+
 We plan to report data comparing the demographics of police departments and the students. We want to be able to display this data visually so we will develop a seperate graph with the chi-square statistic as the x-axis and other policing factors as the y-axis with each university as a data point. These visualizations will be able to successfully help us answer the question of if differences in racial demographics of campus police and student bodies significantly affect the police's activities and operations?
 
 Packages we plan to use:
